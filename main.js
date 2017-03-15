@@ -4,7 +4,7 @@ function clock(){
 	var currentMinutes = currentTime.getMinutes()
 	var currentSeconds = currentTime.getSeconds()
 
-	sets time to 12 hour
+	//sets time to 12 hour
 	if (currentHours > 12){
 		currentHours = currentHours - 12
 	}

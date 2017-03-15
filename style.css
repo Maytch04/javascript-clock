@@ -18,12 +18,14 @@ body{
 	margin: auto;
 	margin-top: 250px; 
 	display: flex; 
+	color: white; 
 	flex-direction: row; 
 }
 
 .clock{
 	margin: auto;
 	display: flex;
+	color: white; 
 	flex-direction: row; 
    
 }
