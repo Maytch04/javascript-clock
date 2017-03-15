@@ -1,0 +1,1 @@
+JavaScript clock keeps current time and the hours and second changes colors depending on what time is displayed. 

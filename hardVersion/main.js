@@ -4,10 +4,10 @@ function clock(){
 	var currentMinutes = currentTime.getMinutes()
 	var currentSeconds = currentTime.getSeconds()
 
-	sets time to 12 hour
-	if (currentHours > 12){
-		currentHours = currentHours - 12
-	}
+	//sets time to 12 hour
+	// if (currentHours > 12){
+	// 	currentHours = currentHours - 12
+	// }
 
 	//sets time to 12 if time is 0
 	if (currentHours === 0){
@@ -24,39 +24,27 @@ function clock(){
 		currentSeconds = '0' + currentSeconds
 	}
 
-	var hours = currentHours + ":"
-	var min = currentMinutes + ":"
+	var hours = '#' + currentHours 
+	var min = currentMinutes 
 	var sec = currentSeconds
 
-	//changes seconds color
+	
+
+	var hexValue ='#' + String(currentHours) + String(currentMinutes) + String(currentSeconds)
+	
 	if(sec % 2 === 1){
-		$('.sec').css('color', '#b5c5e0') 
+		$('body').css('background', hexValue) 
 	}else{
-		$('.sec').css('color', 'white') 
+		$('body').css('background', hexValue) 
 	}
-
-	//changes minute color
-	if(sec % 2 === 1){
-		$('.min').css('color', 'white') 
-	}else{
-		$('.min').css('color', 'white') 
-	}
-
-	//changes hours color 
-	if(sec % 2 === 1){
-		$('.hours').css('color', 'white') 
-	}else{
-		$('.hours').css('color', '#b5c5e0') 
-	}
-
-
+	
 
 	$(".hours").html(hours)
 	$(".min").html(min)
 	$(".sec").html(sec)
-	 
+	console.log(hexValue) 
 }
 	clock()
 	$(document).ready(function(){
-		setInterval('clock()', 100)
+		setInterval('clock()', 1000)
 	})
