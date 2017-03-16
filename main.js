@@ -3,6 +3,14 @@ function clock(){
 	var currentHours = currentTime.getHours()
 	var currentMinutes = currentTime.getMinutes()
 	var currentSeconds = currentTime.getSeconds()
+	
+	var amPM = ""
+	
+	if(currentHours < 12){
+		amPM = "A.M."
+	}else{
+		amPM = "P.M."
+	}
 
 	//sets time to 12 hour
 	if (currentHours > 12){
@@ -26,7 +34,8 @@ function clock(){
 
 	var hours = currentHours + ":"
 	var min = currentMinutes + ":"
-	var sec = currentSeconds
+	var sec = currentSeconds 
+	amPM = amPM 
 
 	//changes seconds color
 	if(sec % 2 === 1){
@@ -37,23 +46,29 @@ function clock(){
 
 	//changes minute color
 	if(sec % 2 === 1){
-		$('.min').css('color', 'white') 
+		$('.min').css('color', '#7f8182') 
 	}else{
-		$('.min').css('color', 'white') 
+		$('.min').css('color', '#92b1e8') 
 	}
 
 	//changes hours color 
 	if(sec % 2 === 1){
-		$('.hours').css('color', 'white') 
+		$('.hours').css('color', '#92b1e8') 
 	}else{
 		$('.hours').css('color', '#b5c5e0') 
 	}
 
+	if(amPM === "A.M."){
+		$('.ampm').css('color', '#f9f7ae') 
+	}else{
+		$('.ampm').css('color', '#bab9b2') 
+	}
 
 
 	$(".hours").html(hours)
 	$(".min").html(min)
 	$(".sec").html(sec)
+	$(".ampm").html(amPM)
 	 
 }
 	clock()

@@ -16,6 +16,7 @@ body{
 	width: 1000px; 
 	margin: auto;
 	margin-top: 250px; 
+	margin-left: 92px;;
 	display: flex; 
 	flex-direction: row; 
 }
@@ -31,20 +32,21 @@ body{
 	display: flex;
 	flex-direction: row;
 	color: white; 
-	font-size: 166px;
+	font-size: 150px;
 }
 
 .min{
 	display: flex;
 	flex-direction: row;
 	color: white;
-	font-size: 166px;
+	font-size: 150px;
 }
 
 .sec{
 	display: flex;
 	flex-direction: row;
 	color: white; 
-	font-size: 166px;
+	font-size: 150px;
+	width: 30px
 }
 

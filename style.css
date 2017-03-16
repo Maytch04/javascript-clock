@@ -15,7 +15,7 @@ body{
 
 .container{
 	width: 1000px; 
-	margin: auto;
+	margin-left: 18px;
 	margin-top: 250px; 
 	display: flex; 
 	color: white; 
@@ -34,6 +34,7 @@ body{
 	display: flex;
 	flex-direction: row;
 	color: white; 
+	
 	font-size: 166px;
 }
 
@@ -42,6 +43,7 @@ body{
 	flex-direction: row;
 	color: blue; 
 	font-size: 166px;
+	
 }
 
 .sec{
@@ -49,4 +51,14 @@ body{
 	flex-direction: row;
 	color:yellow; 
 	font-size: 166px;
+	width: 30px;
+}
+
+.ampm{
+	display: flex;
+	flex-direction: row;
+	color:yellow; 
+	margin-left: 277px;
+	font-size: 166px;
+	width: 30px;
 }
