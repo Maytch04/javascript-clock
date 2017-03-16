@@ -15,8 +15,7 @@ body{
 
 .container{
 	width: 1000px; 
-	margin-left: 18px;
-	margin-top: 250px; 
+	margin-top: 325px; 
 	display: flex; 
 	color: white; 
 	flex-direction: row; 
